@@ -1,5 +1,8 @@
 RECORDS - How to use
 
+Youtube Video Presenting Project: https://youtu.be/cXwjNdtwWhY
+
+
 First, go into the "Project/" folder and then type into the terminal "flask run."
 After doing so, click on the link and it should take you to the appropriate site.
 
