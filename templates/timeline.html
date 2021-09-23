@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Timeline
+{% endblock %}
+
+{% block main %}
+
+{% for records in records %} <!-- loop that allows the program to write everything about each song-->
+
+
+<div class="timeline" img src="record.png">
+
+  <div class="timeline-item">
+
+    <img src="static/record.png" class="timeline-icon"/> <!-- the small vinyl used as placeholders for timeline -->
+    <div class="timeline-content"> <!--ties everything below to the timline in css-->
+
+      <p class="timeline-content-date">{{ records.song }}</p> <!--selects the song of the inputted record -->
+      <p class="timeline-content-date" style="font-weight: normal;">{{ records.artist }}</p> <!--selects the artist of the inputted record -->
+      <p style="font-weight:normal"> {{ records.memory }}</p> <!--selects the memory of the inputted record -->
+      <p class="timeline-content-date">{{ records.date }}</p> <!--selects the date of the inputted record -->
+    </div>
+  </div>
+
+
+
+
+
+            {% endfor %}
+
+        </tbody>
+{% endblock %}
